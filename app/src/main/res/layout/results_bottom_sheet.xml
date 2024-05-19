@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/results_bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/lightGreen"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="65dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+
+
+    >
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/expirybar_container"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:background="@drawable/dark_rounded_background"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="3dp"
+                android:text="@string/expiry_top_text"
+
+                android:textColor="@color/lightGreen"
+                android:textSize="12sp"
+                >
+
+            </TextView>
+
+            <RelativeLayout
+                android:id="@+id/days_results_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="14dp"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/days_results_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/lightGreen"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+
+
+                </TextView>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/analysis_title_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/analysis_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Analysis"
+
+                android:textColor="#1d4f11"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/analysis_sub_text_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/analysis_sub_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="We found these spoilage indicators in your lettuce: " />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/analysis_text_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/dark_rounded_background"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            >
+
+
+
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/percentage_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:background="@drawable/broken_line_rec"
+            >
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/recommendation_title_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/recommendation_title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Recommendation"
+
+                android:textColor="#1d4f11"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/recommendation_sub_text_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/recommendation_sub_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:text="What we recommend to prolong its shelf life:" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/recommendation_text_container1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/recommendation_text1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/dark_rounded_background"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/lightGreen"
+                >
+
+            </TextView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/recommendation_text_container2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/recommendation_text2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/dark_rounded_background"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/lightGreen"
+                >
+
+            </TextView>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/recommendation_text_container3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/recommendation_text3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/dark_rounded_background"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/lightGreen"
+
+
+                >
+
+            </TextView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/scan_again_container"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="Scan another lettuce"
+
+                android:padding="10dp"
+                android:background="@drawable/dark_rounded_background"
+                android:textColor="@color/lightGreen"
+                android:textSize="20sp"
+
+                android:onClick="gotoMainActivity"
+                >
+            </Button>
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.core.widget.NestedScrollView>
+
